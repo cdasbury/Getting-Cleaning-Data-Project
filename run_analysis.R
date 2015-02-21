@@ -60,7 +60,7 @@ TestData <- tbl_df(TestData)
 ### The Data sets have not yet been bound.  I will work out of order from the assignment steps with rationalle to follow.  
 ###  Before binding, I complete step 3 of the assignment: 
 ###  3. Uses descriptive activity names to name the activities in the data set and  
-###  Rationalle: By naming the rows first, the bind_row function of dplyr ensures that the rows match precisely
+###  Rationalle: By naming the columns first, the bind_row function of dplyr ensures that the rows match precisely
 ###              when bound.
 
 ##  Read the label files 
