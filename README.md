@@ -1,4 +1,4 @@
-### Getting-Cleaning-Data-Project
+## Getting-Cleaning-Data-Project
 This repository holds the files associated with the class project for the Coursera Course, "Getting and Cleaning Data"
 
 The assignment asks the student to practice skills necessary in getting and cleaning data to be used in future data analysis.
@@ -29,4 +29,42 @@ From the data set in step 4, creates a second, independent tidy data set with th
 
 ##  EXPLANATION OF run.analysis.R
 
-The CodeBook.md attached to this repository outlines the steps taken to present the clean and tidy dataset required by the project and saved as TidyDataSet.txt
+###Part 1. Merge the training and the test sets to create one data set.
+
+A. First the test data sets and the train datasets are read from the working directory which must be set to the correct file location. The following 3 files are read and bound by column into a data table named "TrainData":
+
+-subject_train.txt
+
+-x_train.txt
+
+-y_train.txt
+
+B. Next the following 3 files are read and bound by column into a data table named "TestData":
+
+-subject_test.txt
+
+-x_test.txt
+
+-y_test.txt
+
+C. Column Names are assigned to the data as derived from the following file: (Project Objective 3)
+
+-features.txt
+
+D. The train files and the test files are then bound by row to make a data set named "ProjectData". (Project Objective 1)
+
+E. Descriptive activity names are applied to "ProjectData from the following file: (Project Objective 4)
+
+-activities_label.txt
+
+###Part 2.
+
+A. Extract only the measurements on the mean and standard deviation for each measurement. (Project Objective 2) 
+
+B. Tidy the dataset such that each variable is a column, each observation is a row, and each type of observational unit is a table. 
+
+C. The resulting data set is named "TidyMeanSD".
+
+###Part 3. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+                  This dataset is saved as "TidyDataSet.txt"
+
