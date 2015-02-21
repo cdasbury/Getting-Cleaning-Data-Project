@@ -81,7 +81,7 @@ ProjectData <- bind_rows(TrainData,TestData)
 ####  This is also out of order from the project directions but does no harm and allows me to
 ####       examine the dataset more accurately.
 
-## Build a look-up table for activity values.  This correlates the number with the activity.
+## Build a look-up table for activity values.  The lut correlates activity with activity number representation.
 lutTemp<- as.character(activity_labels)
 lut<- c("1"=lutTemp[1],"2"=lutTemp[2],"3"=lutTemp[3],"4"=lutTemp[4],"5"=lutTemp[5],"6"=lutTemp[6])
 
